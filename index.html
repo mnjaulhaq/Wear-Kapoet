@@ -19,7 +19,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- NavBar -->
+    <!-- ========================= -->
+    <!-- MARQUEE -->
+    <!-- ========================= -->
+
     <div class="w-full overflow-hidden bg-black text-white">
       <div
         class="whitespace-nowrap animate-[marquee_10s_linear_infinite] font-mono text-[10px] tracking-[0.2em] font-medium"
@@ -29,99 +32,128 @@
         SHIPPING ON ORDERS ABOVE RM 200 ✦
       </div>
     </div>
-    <nav class="bg-stone-200 text-black px-9 py-0.5">
+
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
+
+    <nav class="sticky top-0 z-50 bg-stone-200 text-black px-9 py-0.5">
       <div class="flex justify-between items-center">
-        <div class="flex justify-between items-center font-[playfair]">
+        <!-- Logo -->
+        <div class="flex items-center font-[playfair]">
           <img src="img/logo-wearKapoet.png" alt="Logo" class="w-12 h-12" />
+
           <h1 class="text-lg">Wear.Kapoet</h1>
         </div>
 
+        <!-- Navigation -->
         <div class="flex gap-6 font-[dm_sans] text-[10px]">
           <a
             href="#"
             class="relative py-2 text-gray-800 transition duration-300 hover:text-amber-700 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-700 after:transition-all after:duration-300 hover:after:w-full"
-            >HOME</a
           >
+            HOME
+          </a>
 
           <a
-            href="#"
+            href="#catalog"
             class="relative py-2 text-gray-800 transition duration-300 hover:text-amber-700 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-700 after:transition-all after:duration-300 hover:after:w-full"
-            >PRODUCTS</a
           >
+            PRODUCTS
+          </a>
 
           <a
-            href="#"
+            href="#about"
             class="relative py-2 text-gray-800 transition duration-300 hover:text-amber-700 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-700 after:transition-all after:duration-300 hover:after:w-full"
-            >ABOUT</a
           >
+            ABOUT
+          </a>
         </div>
 
+        <!-- Icons -->
         <div class="flex gap-6">
+          <!-- Search -->
           <a
             href="#"
             class="relative py-2 text-gray-800 transition duration-300 hover:text-gray-500"
-            ><img src="img/magnifying_icon.svg" alt="Search" class="w-5 h-5"
-          /></a>
+          >
+            <img src="img/magnifying_icon.svg" alt="Search" class="w-5 h-5" />
+          </a>
+
+          <!-- Instagram -->
           <a
             href="https://instagram.com/wear.kapoet"
+            target="_blank"
+            rel="noopener noreferrer"
             class="relative py-2 text-gray-800 transition duration-300 hover:text-gray-500"
-            ><img src="img/ig-icon.svg" alt="Instagram" class="w-5 h-5"
-          /></a>
+          >
+            <img src="img/ig-icon.svg" alt="Instagram" class="w-5 h-5" />
+          </a>
         </div>
       </div>
     </nav>
 
     <!-- Content -->
-    <section class="relative h-screen overflow-hidden">
-      <!-- Subtle gradient veil for text legibility -->
+    <!-- ========================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================= -->
 
+    <section class="relative h-screen w-full overflow-hidden">
+      <!-- Background Image -->
+      <img
+        src="img/wear-kapoet1.png"
+        alt="Wear Kapoet"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/10"></div>
+
+      <!-- Content -->
       <div
-        class="relative h-full flex flex-col justify-end pb-16 md:pb-24 px-6 md:px-16 max-w-[1440px] mx-auto"
+        class="relative z-10 h-full w-full flex flex-col justify-end pb-16 md:pb-24 px-6 md:px-16"
       >
-        <img
-          src="img/wear-kapoet1.png"
-          alt="Wear Kapoet"
-          class="absolute inset-0 w-full h-full object-cover z-[-1]"
-        />
-        <!-- Season -->
-        <p
-          class="text-[#FAF8F5]/70 text-[20px] tracking-[0.3em] mb-4 font-medium"
-        >
-          2026
-        </p>
-
-        <!-- Heading -->
-        <h1
-          class="text-[#FAF8F5] text-5xl md:text-7xl lg:text-8xl font-[playfair] leading-none mb-4 tracking-tight"
-        >
-          NEW<br />
-          ARRIVALS
-        </h1>
-
-        <!-- Description -->
-        <p
-          class="text-[#FAF8F5]/80 text-sm md:text-base tracking-wider mb-10 font-light max-w-xs"
-        >
-          Everyday pieces, made to be yours.
-        </p>
-
-        <!-- Buttons -->
-        <div class="flex flex-wrap gap-3">
-          <!-- Shop Collection -->
-          <a
-            href="#catalog"
-            class="inline-block bg-[#FAF8F5] text-[#1C1C1A] text-[10px] tracking-[0.2em] font-medium px-8 py-3.5 hover:bg-[#EAE2D8] transition-colors duration-300"
+        <div class="max-w-[1440px] w-full mx-auto">
+          <!-- Season -->
+          <p
+            class="text-[#FAF8F5]/70 text-[20px] tracking-[0.3em] mb-4 font-medium"
           >
-            SHOP COLLECTION
-          </a>
+            2026
+          </p>
 
-          <!-- Explore Lookbook -->
-          <a
-            href="#lookbook"
-            class="inline-block border border-[#FAF8F5]/60 text-[#FAF8F5] text-[10px] tracking-[0.2em] font-medium px-8 py-3.5 hover:border-[#FAF8F5] hover:bg-[#FAF8F5]/10 transition-all duration-300"
+          <!-- Heading -->
+          <h1
+            class="text-[#FAF8F5] text-5xl md:text-7xl lg:text-8xl font-[playfair] leading-none mb-4 tracking-tight"
           >
-            EXPLORE LOOKBOOK
-          </a>
+            NEW<br />
+            ARRIVALS
+          </h1>
+
+          <!-- Description -->
+          <p
+            class="text-[#FAF8F5]/80 text-sm md:text-base tracking-wider mb-10 font-light max-w-xs"
+          >
+            Everyday pieces, made to be yours.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-wrap gap-3">
+            <!-- Shop Collection -->
+            <a
+              href="#catalog"
+              class="inline-block bg-[#FAF8F5] text-[#1C1C1A] text-[10px] tracking-[0.2em] font-medium px-8 py-3.5 hover:bg-[#EAE2D8] transition-colors duration-300"
+            >
+              SHOP COLLECTION
+            </a>
+
+            <!-- Explore Lookbook -->
+            <a
+              href="#lookbook"
+              class="inline-block border border-[#FAF8F5]/60 text-[#FAF8F5] text-[10px] tracking-[0.2em] font-medium px-8 py-3.5 hover:border-[#FAF8F5] hover:bg-[#FAF8F5]/10 transition-all duration-300"
+            >
+              EXPLORE LOOKBOOK
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -130,35 +162,29 @@
     <!-- COLLECTION SECTION -->
     <!-- ========================= -->
 
-    <section id="catalog" class="bg-[#FAF8F5] px-6 md:px-10 lg:px-16 py-20">
-      <!-- Container -->
-      <div class="max-w-[1280px] mx-auto">
-        <!-- Collection Header -->
-        <div class="mb-10">
-          <!-- Small Title -->
+    <section class="w-full bg-[#FAF8F5]">
+      <!-- CONTENT YANG DIBERI SPACE KIRI & KANAN -->
+      <div class="max-w-[1200px] mx-auto px-6 py-16">
+        <!-- The Latest Edit -->
+        <div class="mb-8">
           <p
-            class="font-['DM_Sans'] text-[10px] tracking-[0.25em] text-gray-500 uppercase mb-3"
+            class="font-['DM_Sans'] text-[9px] tracking-[0.25em] text-gray-400 mb-2"
           >
-            Collection
+            COLLECTION
           </p>
 
-          <!-- Main Title -->
           <h2
             class="font-['Playfair'] text-3xl md:text-4xl text-[#1C1C1A] mb-3"
           >
             The Latest Edit
           </h2>
 
-          <!-- Description -->
           <p class="font-['DM_Sans'] text-xs text-gray-500 max-w-md">
             Pieces you'll want to wear on repeat.
           </p>
         </div>
 
-        <!-- ========================= -->
         <!-- FILTER -->
-        <!-- ========================= -->
-
         <div
           class="flex flex-wrap items-center gap-5 border-b border-gray-200 pb-5 mb-5"
         >
@@ -171,47 +197,42 @@
           <button
             class="font-['DM_Sans'] text-[9px] tracking-[0.15em] text-gray-500 hover:text-[#1C1C1A] transition duration-300"
           >
-            TOPS
+            AMARA
           </button>
 
           <button
             class="font-['DM_Sans'] text-[9px] tracking-[0.15em] text-gray-500 hover:text-[#1C1C1A] transition duration-300"
           >
-            BOTTOMS
+            ELARA
           </button>
 
           <button
             class="font-['DM_Sans'] text-[9px] tracking-[0.15em] text-gray-500 hover:text-[#1C1C1A] transition duration-300"
           >
-            OUTERWEAR
+            ROSALIE
           </button>
 
           <button
-            class="font-['DM_Sans'] text-[9px] tracking-[0.15em] text-gray-500 hover:text-[#1C1C1A] transition duration-300"
+            class="font-['DM_Sans'] text-[9px] tracking-[0.15em] text-gray-500 border-b border-gray-500 pb-1 hover:text-[#1C1C1A] hover:border-[#1C1C1A] transition duration-300"
           >
-            ACCESSORIES
+            MORE ALL
           </button>
         </div>
 
-        <!-- ========================= -->
         <!-- PRODUCT GRID -->
-        <!-- ========================= -->
-
-        <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-x-3 md:gap-x-4 gap-y-10"
-        >
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10">
           <!-- PRODUCT 1 -->
           <div class="group">
-            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+            <div class="w-full aspect-[3/4] overflow-hidden">
               <img
-                src="https://down-id.img.susercontent.com/file/id-11134207-822wr-mpxfshojrjtb36@resize_w450_nl.webp"
+                src="https://down-id.img.susercontent.com/file/id-11134207-81zth-mqlvhiusunsye4@resize_w450_nl.webp"
                 alt="Amara Shirt"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                class="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             <p
-              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase mt-3"
             >
               Shirts
             </p>
@@ -227,16 +248,16 @@
 
           <!-- PRODUCT 2 -->
           <div class="group">
-            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+            <div class="w-full aspect-[3/4] overflow-hidden">
               <img
                 src="https://down-id.img.susercontent.com/file/id-11134207-81zth-mqlvhiusunsye4@resize_w450_nl.webp"
                 alt="Elara Shirt"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                class="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             <p
-              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase mt-3"
             >
               Shirts
             </p>
@@ -252,16 +273,16 @@
 
           <!-- PRODUCT 3 -->
           <div class="group">
-            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+            <div class="w-full aspect-[3/4] overflow-hidden">
               <img
                 src="https://down-id.img.susercontent.com/file/id-11134207-822wm-mpxizcax3aby1a@resize_w450_nl.webp"
                 alt="Rosalie Shirt"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                class="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             <p
-              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase mt-3"
             >
               Shirts
             </p>
@@ -277,16 +298,16 @@
 
           <!-- PRODUCT 4 -->
           <div class="group">
-            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+            <div class="w-full aspect-[3/4] overflow-hidden">
               <img
                 src="https://down-id.img.susercontent.com/file/id-11134207-822wn-mpxtit0596vi05@resize_w450_nl.webp"
                 alt="Alya Shirt"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                class="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             <p
-              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase mt-3"
             >
               Shirts
             </p>
@@ -302,16 +323,16 @@
 
           <!-- PRODUCT 5 -->
           <div class="group">
-            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+            <div class="w-full aspect-[3/4] overflow-hidden">
               <img
                 src="https://down-id.img.susercontent.com/file/id-11134207-822wr-mpxfshojrjtb36@resize_w450_nl.webp"
                 alt="Amara Shirt"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                class="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             <p
-              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase mt-3"
             >
               Shirts
             </p>
@@ -327,16 +348,16 @@
 
           <!-- PRODUCT 6 -->
           <div class="group">
-            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+            <div class="w-full aspect-[3/4] overflow-hidden">
               <img
                 src="https://down-id.img.susercontent.com/file/id-11134207-81zth-mqlvhiusunsye4@resize_w450_nl.webp"
                 alt="Elara Shirt"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                class="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             <p
-              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase mt-3"
             >
               Shirts
             </p>
@@ -352,16 +373,16 @@
 
           <!-- PRODUCT 7 -->
           <div class="group">
-            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+            <div class="w-full aspect-[3/4] overflow-hidden">
               <img
                 src="https://down-id.img.susercontent.com/file/id-11134207-822wm-mpxizcax3aby1a@resize_w450_nl.webp"
                 alt="Rosalie Shirt"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                class="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             <p
-              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase mt-3"
             >
               Shirts
             </p>
@@ -377,16 +398,16 @@
 
           <!-- PRODUCT 8 -->
           <div class="group">
-            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+            <div class="w-full aspect-[3/4] overflow-hidden">
               <img
                 src="https://down-id.img.susercontent.com/file/id-11134207-822wn-mpxtit0596vi05@resize_w450_nl.webp"
                 alt="Luna Set"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                class="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             <p
-              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase mt-3"
             >
               Sets
             </p>
