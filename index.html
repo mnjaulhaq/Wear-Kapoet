@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wear.Kapoet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="w-full overflow-hidden bg-black text-white">
+      <div
+        class="whitespace-nowrap animate-[marquee_10s_linear_infinite] font-mono text-[10px] tracking-[0.2em] font-medium"
+      >
+        NEW SEASON — DISCOVER THE LATEST COLLECTION ✦ FREE SHIPPING ON ORDERS
+        ABOVE RM 200 ✦ NEW SEASON — DISCOVER THE LATEST COLLECTION ✦ FREE
+        SHIPPING ON ORDERS ABOVE RM 200 ✦
+      </div>
+    </div>
+    <nav class="bg-stone-200 text-black px-9 py-0.5">
+      <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center font-[playfair]">
+          <img src="img/logo-wearKapoet.png" alt="Logo" class="w-12 h-12" />
+          <h1 class="text-lg">Wear.Kapoet</h1>
+        </div>
+
+        <div class="flex gap-6 font-[dm_sans] text-[10px]">
+          <a
+            href="#"
+            class="relative py-2 text-gray-800 transition duration-300 hover:text-amber-700 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-700 after:transition-all after:duration-300 hover:after:w-full"
+            >HOME</a
+          >
+
+          <a
+            href="#"
+            class="relative py-2 text-gray-800 transition duration-300 hover:text-amber-700 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-700 after:transition-all after:duration-300 hover:after:w-full"
+            >PRODUCTS</a
+          >
+
+          <a
+            href="#"
+            class="relative py-2 text-gray-800 transition duration-300 hover:text-amber-700 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-700 after:transition-all after:duration-300 hover:after:w-full"
+            >ABOUT</a
+          >
+        </div>
+
+        <div class="flex gap-6">
+          <a
+            href="#"
+            class="relative py-2 text-gray-800 transition duration-300 hover:text-gray-500"
+            ><img src="img/magnifying_icon.svg" alt="Search" class="w-5 h-5"
+          /></a>
+          <a
+            href="https://instagram.com/wear.kapoet"
+            class="relative py-2 text-gray-800 transition duration-300 hover:text-gray-500"
+            ><img src="img/ig-icon.svg" alt="Instagram" class="w-5 h-5"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="relative h-screen overflow-hidden">
+      <!-- Subtle gradient veil for text legibility -->
+
+      <div
+        class="relative h-full flex flex-col justify-end pb-16 md:pb-24 px-6 md:px-16 max-w-[1440px] mx-auto"
+      >
+        <img
+          src="img/wear-kapoet1.png"
+          alt="Wear Kapoet"
+          class="absolute inset-0 w-full h-full object-cover z-[-1]"
+        />
+        <!-- Season -->
+        <p
+          class="text-[#FAF8F5]/70 text-[20px] tracking-[0.3em] mb-4 font-medium"
+        >
+          2026
+        </p>
+
+        <!-- Heading -->
+        <h1
+          class="text-[#FAF8F5] text-5xl md:text-7xl lg:text-8xl font-[playfair] leading-none mb-4 tracking-tight"
+        >
+          NEW<br />
+          ARRIVALS
+        </h1>
+
+        <!-- Description -->
+        <p
+          class="text-[#FAF8F5]/80 text-sm md:text-base tracking-wider mb-10 font-light max-w-xs"
+        >
+          Everyday pieces, made to be yours.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-wrap gap-3">
+          <!-- Shop Collection -->
+          <a
+            href="#catalog"
+            class="inline-block bg-[#FAF8F5] text-[#1C1C1A] text-[10px] tracking-[0.2em] font-medium px-8 py-3.5 hover:bg-[#EAE2D8] transition-colors duration-300"
+          >
+            SHOP COLLECTION
+          </a>
+
+          <!-- Explore Lookbook -->
+          <a
+            href="#lookbook"
+            class="inline-block border border-[#FAF8F5]/60 text-[#FAF8F5] text-[10px] tracking-[0.2em] font-medium px-8 py-3.5 hover:border-[#FAF8F5] hover:bg-[#FAF8F5]/10 transition-all duration-300"
+          >
+            EXPLORE LOOKBOOK
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- COLLECTION SECTION -->
+    <!-- ========================= -->
+
+    <section id="catalog" class="bg-[#FAF8F5] px-6 md:px-10 lg:px-16 py-20">
+      <!-- Container -->
+      <div class="max-w-[1280px] mx-auto">
+        <!-- Collection Header -->
+        <div class="mb-10">
+          <!-- Small Title -->
+          <p
+            class="font-['DM_Sans'] text-[10px] tracking-[0.25em] text-gray-500 uppercase mb-3"
+          >
+            Collection
+          </p>
+
+          <!-- Main Title -->
+          <h2
+            class="font-['Playfair'] text-3xl md:text-4xl text-[#1C1C1A] mb-3"
+          >
+            The Latest Edit
+          </h2>
+
+          <!-- Description -->
+          <p class="font-['DM_Sans'] text-xs text-gray-500 max-w-md">
+            Pieces you'll want to wear on repeat.
+          </p>
+        </div>
+
+        <!-- ========================= -->
+        <!-- FILTER -->
+        <!-- ========================= -->
+
+        <div
+          class="flex flex-wrap items-center gap-5 border-b border-gray-200 pb-5 mb-5"
+        >
+          <button
+            class="font-['DM_Sans'] bg-[#1C1C1A] text-white text-[9px] tracking-[0.15em] px-4 py-2"
+          >
+            ALL
+          </button>
+
+          <button
+            class="font-['DM_Sans'] text-[9px] tracking-[0.15em] text-gray-500 hover:text-[#1C1C1A] transition duration-300"
+          >
+            TOPS
+          </button>
+
+          <button
+            class="font-['DM_Sans'] text-[9px] tracking-[0.15em] text-gray-500 hover:text-[#1C1C1A] transition duration-300"
+          >
+            BOTTOMS
+          </button>
+
+          <button
+            class="font-['DM_Sans'] text-[9px] tracking-[0.15em] text-gray-500 hover:text-[#1C1C1A] transition duration-300"
+          >
+            OUTERWEAR
+          </button>
+
+          <button
+            class="font-['DM_Sans'] text-[9px] tracking-[0.15em] text-gray-500 hover:text-[#1C1C1A] transition duration-300"
+          >
+            ACCESSORIES
+          </button>
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUCT GRID -->
+        <!-- ========================= -->
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-x-3 md:gap-x-4 gap-y-10"
+        >
+          <!-- PRODUCT 1 -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-822wr-mpxfshojrjtb36@resize_w450_nl.webp"
+                alt="Amara Shirt"
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <p
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+            >
+              Shirts
+            </p>
+
+            <h3 class="font-['Playfair'] text-sm text-[#1C1C1A] mt-1">
+              Amara Shirt
+            </h3>
+
+            <p class="font-['DM_Sans'] text-[9px] text-gray-500 mt-1">
+              IDR 156.000
+            </p>
+          </div>
+
+          <!-- PRODUCT 2 -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-81zth-mqlvhiusunsye4@resize_w450_nl.webp"
+                alt="Elara Shirt"
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <p
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+            >
+              Shirts
+            </p>
+
+            <h3 class="font-['Playfair'] text-sm text-[#1C1C1A] mt-1">
+              Elara Shirt
+            </h3>
+
+            <p class="font-['DM_Sans'] text-[9px] text-gray-500 mt-1">
+              IDR 143.000
+            </p>
+          </div>
+
+          <!-- PRODUCT 3 -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-822wm-mpxizcax3aby1a@resize_w450_nl.webp"
+                alt="Rosalie Shirt"
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <p
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+            >
+              Shirts
+            </p>
+
+            <h3 class="font-['Playfair'] text-sm text-[#1C1C1A] mt-1">
+              Rosalie Shirt
+            </h3>
+
+            <p class="font-['DM_Sans'] text-[9px] text-gray-500 mt-1">
+              IDR 170.000
+            </p>
+          </div>
+
+          <!-- PRODUCT 4 -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-822wn-mpxtit0596vi05@resize_w450_nl.webp"
+                alt="Alya Shirt"
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <p
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+            >
+              Shirts
+            </p>
+
+            <h3 class="font-['Playfair'] text-sm text-[#1C1C1A] mt-1">
+              Alya Shirt
+            </h3>
+
+            <p class="font-['DM_Sans'] text-[9px] text-gray-500 mt-1">
+              IDR 185.000
+            </p>
+          </div>
+
+          <!-- PRODUCT 5 -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-822wr-mpxfshojrjtb36@resize_w450_nl.webp"
+                alt="Amara Shirt"
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <p
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+            >
+              Shirts
+            </p>
+
+            <h3 class="font-['Playfair'] text-sm text-[#1C1C1A] mt-1">
+              Amara Shirt
+            </h3>
+
+            <p class="font-['DM_Sans'] text-[9px] text-gray-500 mt-1">
+              IDR 156.000
+            </p>
+          </div>
+
+          <!-- PRODUCT 6 -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-81zth-mqlvhiusunsye4@resize_w450_nl.webp"
+                alt="Elara Shirt"
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <p
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+            >
+              Shirts
+            </p>
+
+            <h3 class="font-['Playfair'] text-sm text-[#1C1C1A] mt-1">
+              Elara Shirt
+            </h3>
+
+            <p class="font-['DM_Sans'] text-[9px] text-gray-500 mt-1">
+              IDR 143.000
+            </p>
+          </div>
+
+          <!-- PRODUCT 7 -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-822wm-mpxizcax3aby1a@resize_w450_nl.webp"
+                alt="Rosalie Shirt"
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <p
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+            >
+              Shirts
+            </p>
+
+            <h3 class="font-['Playfair'] text-sm text-[#1C1C1A] mt-1">
+              Rosalie Shirt
+            </h3>
+
+            <p class="font-['DM_Sans'] text-[9px] text-gray-500 mt-1">
+              IDR 170.000
+            </p>
+          </div>
+
+          <!-- PRODUCT 8 -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden bg-gray-100 mb-3">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-822wn-mpxtit0596vi05@resize_w450_nl.webp"
+                alt="Luna Set"
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <p
+              class="font-['DM_Sans'] text-[8px] tracking-[0.15em] text-gray-400 uppercase"
+            >
+              Sets
+            </p>
+
+            <h3 class="font-['Playfair'] text-sm text-[#1C1C1A] mt-1">
+              Luna Set
+            </h3>
+
+            <p class="font-['DM_Sans'] text-[9px] text-gray-500 mt-1">
+              IDR 195.000
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= -->
+    <!-- MADE FOR EVERYDAY -->
+    <!-- ========================= -->
+
+    <section class="bg-[#FAF8F5] px-6 md:px-10 lg:px-16 py-24">
+      <div class="max-w-[1120px] mx-auto">
+        <!-- Image + Text -->
+        <div class="grid md:grid-cols-2 items-center">
+          <!-- Image -->
+          <div class="overflow-hidden">
+            <img
+              src="img/pic1.jpeg"
+              alt="Made for Everyday"
+              class="w-full h-full aspect-[4/3] object-cover transition duration-700 hover:scale-105"
+            />
+          </div>
+
+          <!-- Text -->
+          <div
+            class="bg-[#F3EEE7] h-full flex flex-col justify-center px-8 md:px-12 lg:px-16 py-12"
+          >
+            <p
+              class="font-['DM_Sans'] text-[9px] tracking-[0.25em] text-gray-500 uppercase mb-4"
+            >
+              The Kapoet Story
+            </p>
+
+            <h2
+              class="font-['Playfair'] text-3xl md:text-4xl text-[#1C1C1A] leading-tight mb-5"
+            >
+              Made for<br />
+              Your Everyday
+            </h2>
+
+            <p
+              class="font-['DM_Sans'] text-xs md:text-sm text-gray-500 leading-relaxed max-w-sm mb-8"
+            >
+              Effortless pieces designed to move with you — from slow mornings
+              to nights out. Each garment is crafted with care, from fabrics
+              that feel as good as they look.
+            </p>
+
+            <a
+              href="#about"
+              class="font-['DM_Sans'] text-[9px] tracking-[0.2em] text-[#1C1C1A] border-b border-[#1C1C1A] pb-2 w-fit hover:text-gray-500 hover:border-gray-500 transition duration-300"
+            >
+              OUR STORY
+            </a>
+          </div>
+        </div>
+
+        <!-- ========================= -->
+        <!-- THE KAPOET LOOK -->
+        <!-- ========================= -->
+
+        <div class="mt-28">
+          <!-- Heading -->
+          <div class="flex justify-between items-end mb-7">
+            <div>
+              <p
+                class="font-['DM_Sans'] text-[9px] tracking-[0.25em] text-gray-500 uppercase mb-3"
+              >
+                Editorial
+              </p>
+
+              <h2 class="font-['Playfair'] text-3xl text-[#1C1C1A]">
+                The Kapoet Look
+              </h2>
+
+              <p class="font-['DM_Sans'] text-xs text-gray-500 mt-2">
+                Simple clothes. Endless ways to wear them.
+              </p>
+            </div>
+
+            <a
+              href="#lookbook"
+              class="hidden md:block font-['DM_Sans'] text-[8px] tracking-[0.15em] border border-gray-400 px-5 py-2.5 hover:bg-[#1C1C1A] hover:text-white hover:border-[#1C1C1A] transition duration-300"
+            >
+              VIEW LOOKBOOK
+            </a>
+          </div>
+
+          <!-- Lookbook Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-1.5">
+            <!-- Large Image -->
+            <div class="col-span-2 row-span-2 overflow-hidden">
+              <img
+                src="img/pic6.jpeg"
+                alt="The Kapoet Look"
+                class="w-full h-full min-h-[300px] md:min-h-[420px] object-cover transition duration-700 hover:scale-105"
+              />
+            </div>
+
+            <!-- Image 2 -->
+            <div class="overflow-hidden">
+              <img
+                src="img/pic3.jpeg"
+                alt="Kapoet Collection"
+                class="w-full h-full aspect-[4/3] object-cover transition duration-700 hover:scale-105"
+              />
+            </div>
+
+            <!-- Image 3 -->
+            <div class="overflow-hidden">
+              <img
+                src="img/pic4.jpeg"
+                alt="Kapoet Collection"
+                class="w-full h-full aspect-[4/3] object-cover transition duration-700 hover:scale-105"
+              />
+            </div>
+
+            <!-- Image 4 -->
+            <div class="overflow-hidden">
+              <img
+                src="img/pic5.jpeg"
+                alt="Kapoet Collection"
+                class="w-full h-full aspect-[4/3] object-cover transition duration-700 hover:scale-105"
+              />
+            </div>
+
+            <!-- Image 5 -->
+            <div class="overflow-hidden">
+              <img
+                src="img/pic2.jpeg"
+                alt="Kapoet Collection"
+                class="w-full h-full aspect-[4/3] object-cover transition duration-700 hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- CTA SECTION -->
+    <!-- ========================= -->
+
+    <section class="bg-[#EDE4D8] px-6 py-20 md:py-24">
+      <div class="max-w-[700px] mx-auto text-center">
+        <!-- Small Text -->
+        <p
+          class="font-['DM_Sans'] text-[9px] tracking-[0.3em] text-gray-500 uppercase mb-5"
+        >
+          Need to Know
+        </p>
+
+        <!-- Heading -->
+        <h2
+          class="font-['Playfair'] text-3xl md:text-4xl text-[#1C1C1A] leading-tight"
+        >
+          Found Something<br />
+          You Love?
+        </h2>
+
+        <!-- Description -->
+        <p
+          class="font-['DM_Sans'] text-xs md:text-sm text-gray-500 max-w-md mx-auto mt-5 leading-relaxed"
+        >
+          Order directly through WhatsApp or shop with us on Shopee. We're here
+          to help you find your perfect piece.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-wrap justify-center gap-2 mt-8">
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/6283152679613"
+            class="inline-flex items-center gap-2 bg-[#1C1C1A] text-white font-['DM_Sans'] text-[8px] tracking-[0.15em] px-6 py-3 hover:bg-gray-700 transition duration-300"
+          >
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            BUY VIA WHATSAPP
+          </a>
+
+          <!-- Shopee -->
+          <a
+            href="#"
+            class="inline-flex items-center gap-2 border border-[#1C1C1A] text-[#1C1C1A] font-['DM_Sans'] text-[8px] tracking-[0.15em] px-6 py-3 hover:bg-[#1C1C1A] hover:text-white transition duration-300"
+          >
+            BUY ON SHOPEE
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer class="bg-[#FAF8F5] px-6 md:px-10 lg:px-16 pt-16 pb-8">
+      <!-- Footer Main Content -->
+      <div
+        class="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-16 pb-12"
+      >
+        <!-- ========================= -->
+        <!-- BRAND -->
+        <!-- ========================= -->
+
+        <div class="col-span-2 md:col-span-1">
+          <h2 class="font-['Playfair'] text-2xl text-[#1C1C1A] mb-4">
+            wear.kapoet
+          </h2>
+
+          <p
+            class="font-['DM_Sans'] text-xs text-[#8A847C] leading-relaxed max-w-[230px]"
+          >
+            Everyday pieces designed with intention. Feminine, minimal, yours.
+          </p>
+        </div>
+
+        <!-- ========================= -->
+        <!-- SHOP -->
+        <!-- ========================= -->
+
+        <div>
+          <p
+            class="font-['DM_Sans'] text-[9px] tracking-[0.25em] text-[#1C1C1A] mb-5 font-medium"
+          >
+            SHOP
+          </p>
+
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="#catalog"
+                class="font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                New Arrivals
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#catalog"
+                class="font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                Tops
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#catalog"
+                class="font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                Shirts
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#catalog"
+                class="font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                Bottoms
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#catalog"
+                class="font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                Sets
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ========================= -->
+        <!-- BRAND -->
+        <!-- ========================= -->
+
+        <div>
+          <p
+            class="font-['DM_Sans'] text-[9px] tracking-[0.25em] text-[#1C1C1A] mb-5 font-medium"
+          >
+            BRAND
+          </p>
+
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="#about"
+                class="font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                About
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#lookbook"
+                class="font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                Lookbook
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                Care Guide
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                Sizing
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ========================= -->
+        <!-- ORDER & CONNECT -->
+        <!-- ========================= -->
+
+        <div>
+          <p
+            class="font-['DM_Sans'] text-[9px] tracking-[0.25em] text-[#1C1C1A] mb-5 font-medium"
+          >
+            ORDER & CONNECT
+          </p>
+
+          <ul class="space-y-3">
+            <!-- WhatsApp -->
+            <li>
+              <a
+                href="https://wa.me/6283152679613"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                <i class="fa-brands fa-whatsapp text-sm"></i>
+                WhatsApp
+              </a>
+            </li>
+
+            <!-- Shopee -->
+            <li>
+              <a
+                href="https://shopee.com/wear.kapoet"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                <i class="fa-solid fa-bag-shopping text-sm"></i>
+                Shopee
+              </a>
+            </li>
+
+            <!-- Instagram -->
+            <li>
+              <a
+                href="https://instagram.com/wear.kapoet"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 font-['DM_Sans'] text-[#8A847C] text-xs hover:text-[#1C1C1A] transition-colors duration-300 font-light"
+              >
+                <i class="fa-brands fa-instagram text-sm"></i>
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ========================= -->
+      <!-- FOOTER BOTTOM -->
+      <!-- ========================= -->
+
+      <div
+        class="max-w-[1280px] mx-auto border-t border-[#DDD5C8] pt-8 flex flex-col md:flex-row justify-between items-center gap-3"
+      >
+        <p
+          class="font-['DM_Sans'] text-[#8A847C] text-[10px] tracking-wider font-light text-center md:text-left"
+        >
+          © 2026 wear.kapoet. All rights reserved.
+        </p>
+
+        <p
+          class="font-['DM_Sans'] text-[#8A847C] text-[10px] tracking-wider font-light text-center md:text-right"
+        >
+          Made with care. Worn with intention.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
